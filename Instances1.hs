@@ -4,6 +4,6 @@
 module Instances1 where
 
 import {-# SOURCE #-} Instances2 ()
-import Decl
+import Types
 
 deriving instance Show (Decl p)

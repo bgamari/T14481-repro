@@ -1,4 +1,4 @@
-import Expr
+import Types
 
 -- Use SOURCE import to ensure GHC doesn't grab dictionary from unfolding in
 -- interface file

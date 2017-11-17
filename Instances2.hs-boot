@@ -3,6 +3,6 @@
 
 module Instances2 where
 
-import Expr
+import Types
 
 instance Show (Expr p)

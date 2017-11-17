@@ -3,6 +3,6 @@
 
 module Instances1 where
 
-import Decl
+import Types
 
 instance Show (Decl p)
