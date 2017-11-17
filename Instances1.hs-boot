@@ -6,7 +6,6 @@
 
 module Instances1 where
 
-import Extension ( DataIdLR )
 import Decl
 
-instance (DataIdLR p p) => Show (Decl p)
+instance Show (Decl p)

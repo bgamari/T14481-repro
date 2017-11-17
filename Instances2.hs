@@ -8,7 +8,6 @@
 module Instances2 where
 
 import {-# SOURCE #-} Instances1 ()
-import Extension
 import Expr
 
-deriving instance (DataIdLR p p) => Show (Expr p)
+deriving instance Show (Expr p)

@@ -4,7 +4,6 @@ ghc=ghc
 
 git clean -f
 
-$ghc -c Extension.hs
 $ghc -c Expr.hs
 $ghc -c Decl.hs
 
@@ -22,5 +21,5 @@ objdump -x *.o | grep zdfx
 # Main.o:s3q9_info: error: undefined reference to 'Instances2_zdfxShowExpr_closure'
 # Main.o(.data.rel.ro+0x8): error: undefined reference to 'Instances2_zdfxShowExpr_closure'
 
-$ghc -o test Extension.o Expr.o Decl.o Instances1.o Instances2.o Main.o
+$ghc -o test Expr.o Decl.o Instances1.o Instances2.o Main.o
 ./test
