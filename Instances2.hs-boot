@@ -6,8 +6,7 @@
 
 module Instances2 where
 
-import Data.Data hiding ( Fixity )
 import Extension ( DataIdLR )
 import Expr
 
-instance (DataIdLR p p) => Data (Expr p)
+instance (DataIdLR p p) => Show (Expr p)

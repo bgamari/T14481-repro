@@ -1,6 +1,5 @@
 {-# LANGUAGE TypeFamilies #-}
 {-# LANGUAGE StandaloneDeriving #-}
-{-# LANGUAGE DeriveDataTypeable #-}
 {-# LANGUAGE FlexibleContexts #-}
 {-# LANGUAGE FlexibleInstances #-}
 {-# LANGUAGE UndecidableInstances #-}
@@ -8,10 +7,8 @@
 
 module Instances2 where
 
-import Data.Data hiding ( Fixity )
-
 import {-# SOURCE #-} Instances1 ()
 import Extension
 import Expr
 
-deriving instance (DataIdLR p p) => Data (Expr p)
+deriving instance (DataIdLR p p) => Show (Expr p)

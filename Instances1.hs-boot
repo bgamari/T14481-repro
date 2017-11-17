@@ -6,8 +6,7 @@
 
 module Instances1 where
 
-import Data.Data hiding ( Fixity )
 import Extension ( DataIdLR )
 import Decl
 
-instance (DataIdLR p p) => Data (Decl p)
+instance (DataIdLR p p) => Show (Decl p)
